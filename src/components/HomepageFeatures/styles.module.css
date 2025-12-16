@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.chapterFeature {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.chapterFeature:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: scale(1.02);
+  color: inherit;
+}

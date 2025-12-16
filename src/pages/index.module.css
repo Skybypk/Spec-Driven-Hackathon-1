@@ -1,0 +1,58 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Override default button styles to ensure white background with black text */
+.buttons a.button--custom,
+.buttons .button--custom {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid #000 !important;
+  transition: all 0.3s ease !important;
+  font-weight: bold !important;
+}
+
+.buttons a.button--custom:hover,
+.buttons .button--custom:hover {
+  background-color: #f5f5f5 !important;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.features {
+  padding: 2rem 0;
+}
+
+.searchSection {
+  padding: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 996px) {
+  .searchSection {
+    padding: 0.5rem;
+  }
+}
